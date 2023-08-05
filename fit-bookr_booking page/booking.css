@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: none;
+}
+
+header {
+  font-family: ;
+  color: white
+  /* border: 10px solid ; */
+}
+
+img {
+  /* width: 100%; */
+}
+.new{
+  text-align: center!important;;
+  font-size: 50px;
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-text {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  color: whitesmoke;
+  font-size: 50px;
+  font-weight: 600;
+  transform: translate(-50%, -50%);
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.container {
+  display: flex;
+  border: 1px solid #ccc;
+
+  padding: 20px;
+}
+
+.calendar {
+  flex: 1;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+.schedule {
+  flex: 2;
+  padding: 10px;
+  background-color: #e0e0e0;
+}
+
+/* Additional styling for calendar and schedule */
+.calendar h2,
+.schedule h2 {
+  margin-top: 0;
+}
+
+.calendar .datepicker {
+  margin-bottom: 10px;
+}
+
+.schedule .event {
+  margin-bottom: 10px;
+}
