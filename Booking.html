@@ -7,7 +7,8 @@
   <title>FITBOOKR - BOOKING</title>
   <link rel="shortcut icon" href="./images/fitbookr_logo_360.png" type="image/x-icon">
   <link rel="stylesheet" href="booking.css">
-
+  <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/css/intlTelInput.css" />
+  <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 </head>
 
 <body>
@@ -21,15 +22,150 @@
         <div class="image-text">
           Booking Summary
         </div>
-        </div>
-    </section>
-    <section>
-      <div> 
-        <img src="./images/Vector.png" alt="Pilates">
       </div>
     </section>
+    <section class="section_a">
+      <div class="container1">
+        <div class="contact">
+          <div>
+            <img src="./images/Vector.png" class="contact_himg" alt="Pilates">
+          </div>
+          <div class="contact_htext">
+            <p>Pilates Class </p>
+          </div>
+          <div class="contact_htext2">
+            <p>Monday, 5:30pm 6:30pm, with Coach Fred</p>
+          </div>
+        </div>
+        <form class="form1" method="post">
+          <div class="input_container">
+            <div class="input_name">
+              <label class="input_label" for="first_name">First name:</label><br>
+              <input class="input_tbox" type="text" id="first_name" name="first_name" placeholder="Enter First Name"
+                required>
+            </div>
+            <div class="input_name">
+              <label class="input_label" for="last_name">Last name:</label><br>
+              <input class="input_tbox" type="text" id="last_name" name="last_name" placeholder="Enter First Name"
+                required>
+            </div>
+          </div>
+          <div class=".input_mobilenumber">
+            <label class="input_label1" for="mobile_number">Mobile number:</label>
+            <!-- <input class="input_areacode" id="phone" type="" name="area-code" > -->
+            <input class="input_nbox" type="text" name="mobile_number" id="phone" placeholder="Enter Mobile Number"
+              maxlength="10" inputmode="numeric" required>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="receive_alerts" name="receive_alerts">
+            <label for="receive_alerts">Receive text alerts about this booking.</label><br><br>
+          </div>
+        </form>
+      </div>
+
+      <div class="container2">
+        <div>
+          <img class="yoga_img" src="./images/Rectangle 68.png" alt="Fit-Bookr">
+        </div>
+        <div class="yoga_container">
+          <div class="yoga_class">
+            <h2>
+              Yoga Class
+            </h2>
+            <div>
+              <p>
+                <img class="yoga_img2" src="./images/Vector (1).png" alt="">
+              </p>
+            </div>
+          </div>
+          <div>
+            <p class="yoga_class_p1">Non Refundable</p>
+            <p class="yoga_class_p">Reservation Date Monday, July, 2023</p>
+            <p class="yoga_class_p">Duration: 5:30pm - 6:30pm</p>
+            <p class="yoga_class_p">1 Individual</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div>
+        <img src="./images/Group (1).png" alt="">
+      </div>
+      <!-- <div>
+        <div>
+          <a href="">Debit/Credit Card</a>
+          <a href="">Paypal</a>
+          <a href="">Bank Transfer</a>
+        </div>
+      </div> -->
+    </section>
+    <section>
+      <div class="container3">
+        <div class="price_details">
+          <p class="price_dh">Price Details</p>
+        </div>
+        <div class="price_dt">
+          <p>Yoga Class X 1</p>
+          <p>$ 120.32</p>
+        </div>
+        <div class="price_dt">
+          <p>Tax and Service fees</p>
+          <p> $8.32</p>
+        </div>
+        <div class="price_dt">
+          <h3>Total</h3>
+          <h2>$130</h2>
+        </div>
+        <div class="">
+          <a href="">Use a coupon, Credit or Promotional Code</a>
+          <h5>Coupon Code</h5>
+        </div>
+        <div class="price_dt">
+          <p>FIT_100</p>
+          <button type="submit">Apply Coupon</button>
+        </div>
+      </div>
+    </section>
+    <!-- <section>
+      <div>
+        <p>Important information about your booking</p>
+      </div>
+      <div>
+        <ol>
+          <li> This rate is non refundable. If you change or cancel your booking you will not get a refund or credit to
+            use for a session.</li>
+          <li>Session extensions will require a new booking-</li>
+          <li>Studio attendant will confirm booking on your arrival</li>
+          <li> No refunds will be issued for late arrival or early departure.</li>
+        </ol>
+      </div>
+      <div>
+        <p>By clicking the button below, I acknowledge that I have reviewed the <a href="#">Terms and Conditions</a> and
+          have reviewed and accept the <a href="#">Rules and Restrictions</a><a href="#">Privacy Statement</a> and <a
+            href="#">Terms of Use</a>.
+        </p>
+
+        <p><br></p>
+        <button type="submit">Complete Booking</button>
+
+      </div>
+      <div>
+        <div> <img src="./images/Group.png" alt=""></div>
+        <div>
+          <p>We use secure transmission and encrypted storage to protect your personal information</p>
+        </div>
+      </div>
+
+    </section> -->
 
   </main>
+  <script>
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      separateDialCode: true,
+      preferredCountries: ["ng"]
+    });
+  </script>
 </body>
 
 </html>
