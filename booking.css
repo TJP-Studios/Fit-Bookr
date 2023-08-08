@@ -173,7 +173,7 @@ img {
 }
 
 .input_nbox {
-  width: 183%;
+  width: 100%;
   padding: 15px 12px 12px 12px;
   background-color: #ccc;
   margin-top: 0.5rem;
@@ -245,7 +245,6 @@ img {
   padding: 1em;
   gap: 3%;
   background: #7F2674;
-  text-align: end;
 }
 .price_dh{
   color: white;
@@ -256,6 +255,38 @@ img {
   align-items: center;
   margin: 5%;
 }
+.price_tcoupon{
+  margin: 5%;
+}
+.price_dc{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.price_coupon{
+  display: inline-block;
+}
 a{
   text-decoration: none;
+}
+.price_clabel{
+  padding-left: 3%;
+  
+}
+.price_cinput{
+  width: 100%;
+  padding: 1em 1.5em;
+  background-color: #ccc;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+  border: none;
+
+}
+.price_cbutton{
+  padding: 2%;
+  background-color: black;
+  color: #EEF0F4;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+  /* border: 2px solid blue; */
 }
