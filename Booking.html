@@ -87,26 +87,118 @@
         </div>
       </div>
     </section>
-    <section class="container3">
-      <div class="payment_option">
-        <div>
-          <img src="./images/Group (1).png" alt="">
+    <section class="section_a">
+      <div class="container3">
+        <div class="payment_option">
+          <div>
+            <img src="./images/Group (1).png" class="contact_himg" alt="Payment Option">
+          </div>
+          <div class="contact_htext">
+            <p>
+              Payment Option
+            </p>
+          </div>
         </div>
-        <div>
-          <p>
-            Payment Option
-          </p>
+        <div class="payment_info">
+          <div class="tabs__sidebar">
+            <button class="tabs__button" data-for-tab="1"> Debit/Credit Card</button>
+            <button class="tabs__button" data-for-tab="2"> Paypal</button>
+            <button class="tabs__button" data-for-tab="3"> Bank Transfer</button>
+          </div>
+          <form class="tabs__content" data-tab="1">
+            <div>
+              <img src="./images/Frame 156.png" class="payment_option_img" alt="">
+            </div>
+            <div class="payment_oform">
+              <div class="payment_input1">
+                <label for="card-name" class="payment_label">Name on Card</label>
+                <input type="text" class="payment_inputf" id="card-name" name="card-name" required>
+              </div>
+              <div class="payment_input1">
+                <label for="card-number" class="payment_label">Debit/Credit Card Number</label>
+                <input type="text" class="payment_inputf" id="card-number" name="card-number" required>
+              </div>
+            </div>
+            <div class="payment_expiration">
+              <label for="expiration-month" class="payment_label">Expiration Date</label>
+              <select id="expiration-month" class="payment_inputf2" name="expiration-month" required>
+                <option value="" disabled selected>Month</option>
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+
+              </select>
+              <select id="expiration-year" class="payment_inputf2" name="expiration-year" required>
+                <option value="" disabled selected>Year</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+                <option value="2031">2031</option>
+                <option value="2032">2032</option>
+                <option value="2033">2033</option>
+                <option value="2034">2034</option>
+                <option value="2035">2035</option>
+                <option value="2036">2036</option>
+                <option value="2037">2037</option>
+                <option value="2038">2038</option>
+                <option value="2039">2039</option>
+                <option value="2040">2040</option>
+                <option value="2041">2041</option>
+                <option value="2042">2042</option>
+                <option value="2043">2043</option>
+                <option value="2044">2044</option>
+                <option value="2045">2045</option>
+                <option value="2046">2046</option>
+                <option value="2047">2047</option>
+                <option value="2048">2048</option>
+                <option value="2049">2049</option>
+                <option value="2050">2050</option>
+
+              </select>
+            </div>
+            <div class="payment_security">
+              <div>
+                <label for="security-code">Security Code</label>
+                <input type="text" id="security-code" class="payment_inputf3" name="security-code" required>
+              </div>
+              <div>
+                <label for="billing-zip">Billing Zip Code</label>
+                <input type="text" id="billing-zip" class="payment_inputf3" name="billing-zip" required>
+              </div>
+            </div>
+          </form>
+          <div class="tabs__content" data-tab="2">
+            <div class="payment-section" id="paypal_section">
+              <h2 class="btn2">PayPal</h2>
+              <p class="btn1">Please click the button below to proceed to PayPal:</p>
+              <a class="btn" href="https://www.paypal.com/login">Proceed to PayPal</a>
+            </div>
+          </div>
+          <div class="tabs__content" data-tab="3">
+            <div class="payment-section" id="bank_transfer_section">
+              <h2>Bank Transfer</h2>
+              <label for="routing_number">Routing Number:</label>
+              <input type="text" id="routing_number" name="routing_number" required>
+              <label for="account_number">Account Number:</label>
+              <input type="text" id="account_number" name="account_number" required>
+            </div>
+          </div>
         </div>
       </div>
-      <div>
-        <div>
-          <a href="">Debit/Credit Card</a>
-
-        </div>
-      </div>
-
-    </section>
-    <!-- <section>
       <div class="container4">
         <div class="price_details">
           <p class="price_dh">Price Details</p>
@@ -129,7 +221,9 @@
         </div>
         <div class="price_dc">
           <div class="price_coupon">
-            <label for="Coupon_Code"><h5>Coupon Code</h5></label>
+            <label for="Coupon_Code">
+              <h5>Coupon Code</h5>
+            </label>
             <input class="price_cinput" type="text" id="last_name" name="last_name" placeholder="Coupon Code">
           </div>
           <div>
@@ -138,7 +232,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section class="section_b">
       <div class="container5">
         <div class="booking_terms">
           <p class="booking_text1">Important information about your booking</p>
@@ -146,38 +240,64 @@
         <div>
           <ol>
             <li> This rate is non refundable. If you change or cancel your booking you will not get a refund or credit
-              to
-              use for a session.</li>
+              to use for a session.</li>
             <li>Session extensions will require a new booking-</li>
             <li>Studio attendant will confirm booking on your arrival</li>
             <li> No refunds will be issued for late arrival or early departure.</li>
           </ol>
         </div>
         <div class="booking_terms2">
-          <p class="booking_text2">By clicking the button below, I acknowledge that I have reviewed the <a href="#">Privacy Statement</a>
+          <p class="booking_text2">By clicking the button below, I acknowledge that I have reviewed the <a
+              href="#">Privacy Statement</a>
             and
-            have reviewed and accept the <a href="#">Rules and Restrictions</a> and <a
-              href="#">Terms of Use</a>.
+            have reviewed and accept the <a href="#">Rules and Restrictions</a> and <a href="#">Terms of Use</a>.
           </p>
           <div>
             <button type="submit" class="booking_tbutton">Complete Booking</button>
           </div>
         </div>
         <div class="booking_terms3">
-          <div > <img src="./images/Group.png" class="booking_terms_img" alt="Fit-bookr"></div>
+          <div> <img src="./images/Group.png" class="booking_terms_img" alt="Fit-bookr"></div>
           <div>
-            <p class="booking_text3">We use secure transmission and encrypted storage to protect your personal information</p>
+            <p class="booking_text3">We use secure transmission and encrypted storage to protect your personal
+              information</p>
           </div>
         </div>
       </div>
-    </section> -->
-
+    </section>
   </main>
   <script>
     var input = document.querySelector("#phone");
     window.intlTelInput(input, {
       separateDialCode: true,
-      preferredCountries: ["ng"]
+      preferredCountries: ["ng", "au", "gb", "us"]
+    });
+  </script>
+  <script>
+    function setupTabs() {
+      document.querySelectorAll(".tabs__button").forEach(button => {
+        button.addEventListener("click", () => {
+          const sideBar = button.parentElement; // Corrected variable name from 'sidBar' to 'sideBar'
+          const tabsContainer = sideBar.parentElement;
+          const tabNumber = button.dataset.forTab;
+          const tabToActivate = tabsContainer.querySelector(`.tabs__content[data-tab="${tabNumber}"]`); // Corrected spelling 'quarySelector' to 'querySelector', and used backticks for string interpolation
+
+          sideBar.querySelectorAll(".tabs__button").forEach(btn => {
+            btn.classList.remove("tabs__button--active");
+          });
+          tabsContainer.querySelectorAll(".tabs__content").forEach(tab => {
+            tab.classList.remove("tabs__content--active"); // Corrected variable name 'tabs' to 'tab'
+          });
+          button.classList.add("tabs__button--active");
+          tabToActivate.classList.add("tabs__content--active"); // Corrected variable name 'tabToActive' to 'tabToActivate'
+        });
+      });
+    }
+    document.addEventListener("DOMContentLoaded", () => {
+      setupTabs();
+      document.querySelectorAll(".tabs").forEach(tabsContainer => {
+        tabsContainer.querySelector(".tabs__sidebar .tabs__button").click();
+      });
     });
   </script>
 </body>
