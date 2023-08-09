@@ -221,16 +221,29 @@
               </div>
               <div class="bank_btn">
                 <div>
-                  <label for="routing_number" class="bank_label">Routing Number:</label>
-                  <input type="text" id="routing_number" class="bank_input" name="routing_number" required>
-                  <label for="account_number" class="bank_label">Account Number:</label>
-                  <input type="text" id="account_number" class="bank_input name=" account_number" required>
+                  <div>
+                    <label for="routing_number" class="bank_label">Routing Number:</label>
+                  </div>
+                  <div class="bank_ra_input">
+                    <input type="text" id="routing_number" class="bank_input" name="routing_number" placeholder="Enter Routing Number" pattern="[0-9a-zA-Z,-]{9}" maxlength="9" required>
+                    <span class="input-validation"></span>
+                  </div>
+                  <div>
+                    <label for="account_number" class="bank_label">Account Number:</label>
+                  </div>
+                  <div class="bank_ra_input">
+                    <input type="text" id="account_number" class="bank_input name=" placeholder="Enter Account Number"  pattern="[0-9]{10}" maxlength="10" required>
+                    <span class="input-validation"></span>
+                  </div>
                 </div>
 
               </div>
             </div>
+
           </div>
         </div>
+      </div>
+      </div>
       </div>
       <div class="container4">
         <div class="price_details">

@@ -439,7 +439,7 @@ payment-section {
 }
 
 .bank_btn {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   display: flex;
 
 }
@@ -453,9 +453,14 @@ payment-section {
   background-color: #e7e3e3;
   padding: 0.8em;
   display: block;
+  margin-right: 5%;
   border-radius: 6px 6px 6px 6px;
 }
 
+.bank_ra_input {
+  display: flex;
+  align-items: middle;
+}
 .container4 {
   display: block;
   background-color: white;
@@ -531,7 +536,7 @@ a {
 .container5 {
   display: block;
   background-color: white;
-  border: 1px solid #d60c0c;
+  /* border: 1px solid #d60c0c; */
   border-radius: 6px 6px 0px 0px;
 
   width: 59%;
