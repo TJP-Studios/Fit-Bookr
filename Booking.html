@@ -110,14 +110,20 @@
               <img src="./images/Frame 156.png" class="payment_option_img" alt="">
             </div>
             <div class="payment_oform">
+
               <div class="payment_input1">
                 <label for="card-name" class="payment_label">Name on Card</label>
-                <input type="text" class="payment_inputf" id="card-name" name="card-name" required>
+                <input type="text" class="payment_inputf" id="card-name" name="card-name" minlength="6" required>
+                <span class="input-validation"></span>
               </div>
+
               <div class="payment_input1">
                 <label for="card-number" class="payment_label">Debit/Credit Card Number</label>
-                <input type="text" class="payment_inputf" id="card-number" name="card-number" required>
+                <input type="text" class="payment_inputf" id="cc" name="card-number" pattern="[0-9]{16}" maxlength="16"
+                  required>
+                <span class="input-validation"></span>
               </div>
+
             </div>
             <div class="payment_expiration">
               <label for="expiration-month" class="payment_label">Expiration Date</label>
@@ -167,34 +173,61 @@
                 <option value="2048">2048</option>
                 <option value="2049">2049</option>
                 <option value="2050">2050</option>
-
               </select>
+              <span class="input-validation"></span>
+
             </div>
-            <div class="payment_security">
-              <div>
-                <label for="security-code">Security Code</label>
-                <input type="text" id="security-code" class="payment_inputf3" name="security-code" required>
+
+            <div class="payment_sb">
+              <div class="payment_sbcode">
+                <div>
+                  <label for="security-code">Security Code</label>
+                </div>
+                <div class="payment_sb_input">
+                  <input type="text" id="security-code" class="payment_inputf3" name="security-code"
+                    pattern="[0-9]{3,4}" minlength="3" maxlength="4" required>
+                  <span class="input-validation"></span>
+                </div>
               </div>
-              <div>
-                <label for="billing-zip">Billing Zip Code</label>
-                <input type="text" id="billing-zip" class="payment_inputf3" name="billing-zip" required>
+              <div class="payment_sbcode">
+                <div>
+                  <label for="billing-zip">Billing Zip Code</label>
+                </div>
+                <div class="payment_sb_input">
+                  <input type="text" id="billing-zip" class="payment_inputf4" name="billing-zip"
+                    pattern="[0-9a-zA-Z,-]{5}" maxlength="7" required>
+                  <span class="input-validation"></span>
+                </div>
               </div>
             </div>
+
           </form>
           <div class="tabs__content" data-tab="2">
             <div class="payment-section" id="paypal_section">
-              <h2 class="btn2">PayPal</h2>
+              <div>
+                <img src="./images/logo_paypal_bank.png" class="btn_img" loading="eager" alt="Paypal">
+              </div>
               <p class="btn1">Please click the button below to proceed to PayPal:</p>
               <a class="btn" href="https://www.paypal.com/login">Proceed to PayPal</a>
+              <div>
+                <img src="./images/paypaly.png" class="btn_img" loading="eager" alt="Paypal">
+              </div>
             </div>
           </div>
           <div class="tabs__content" data-tab="3">
             <div class="payment-section" id="bank_transfer_section">
-              <h2>Bank Transfer</h2>
-              <label for="routing_number">Routing Number:</label>
-              <input type="text" id="routing_number" name="routing_number" required>
-              <label for="account_number">Account Number:</label>
-              <input type="text" id="account_number" name="account_number" required>
+              <div>
+                <img src="./images/regular-bank-transfer.png" class="btn_img" loading="eager" alt="Paypal">
+              </div>
+              <div class="bank_btn">
+                <div>
+                  <label for="routing_number" class="bank_label">Routing Number:</label>
+                  <input type="text" id="routing_number" class="bank_input" name="routing_number" required>
+                  <label for="account_number" class="bank_label">Account Number:</label>
+                  <input type="text" id="account_number" class="bank_input name=" account_number" required>
+                </div>
+
+              </div>
             </div>
           </div>
         </div>
@@ -237,30 +270,32 @@
         <div class="booking_terms">
           <p class="booking_text1">Important information about your booking</p>
         </div>
-        <div>
-          <ol>
-            <li> This rate is non refundable. If you change or cancel your booking you will not get a refund or credit
-              to use for a session.</li>
-            <li>Session extensions will require a new booking-</li>
-            <li>Studio attendant will confirm booking on your arrival</li>
-            <li> No refunds will be issued for late arrival or early departure.</li>
-          </ol>
-        </div>
-        <div class="booking_terms2">
-          <p class="booking_text2">By clicking the button below, I acknowledge that I have reviewed the <a
-              href="#">Privacy Statement</a>
-            and
-            have reviewed and accept the <a href="#">Rules and Restrictions</a> and <a href="#">Terms of Use</a>.
-          </p>
+        <div class="container5_layer">
           <div>
-            <button type="submit" class="booking_tbutton">Complete Booking</button>
+            <ol class="list">
+              <li> This rate is non refundable. If you change or cancel your booking you will not get a refund or credit
+                to use for a session.</li>
+              <li>Session extensions will require a new booking</li>
+              <li>Studio attendant will confirm booking on your arrival</li>
+              <li> No refunds will be issued for late arrival or early departure.</li>
+            </ol>
           </div>
-        </div>
-        <div class="booking_terms3">
-          <div> <img src="./images/Group.png" class="booking_terms_img" alt="Fit-bookr"></div>
-          <div>
-            <p class="booking_text3">We use secure transmission and encrypted storage to protect your personal
-              information</p>
+          <div class="booking_terms2">
+            <p class="booking_text2">By clicking the button below, I acknowledge that I have reviewed the <a
+                href="#">Privacy Statement</a>
+              and
+              have reviewed and accept the <a href="#">Rules and Restrictions</a> and <a href="#">Terms of Use</a>.
+            </p>
+            <div>
+              <button type="submit" class="booking_tbutton">Complete Booking</button>
+            </div>
+          </div>
+          <div class="booking_terms3">
+            <div> <img src="./images/Group.png" class="booking_terms_img" alt="Fit-bookr"></div>
+            <div>
+              <p class="booking_text3">We use secure transmission and encrypted storage to protect your personal
+                information</p>
+            </div>
           </div>
         </div>
       </div>
