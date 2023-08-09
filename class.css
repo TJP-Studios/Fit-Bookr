@@ -1,0 +1,309 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.containter{
+    padding: 0 3%;
+}
+section{
+    margin-bottom: 5%;
+}
+
+button{
+    cursor: pointer;
+}
+
+header{
+    background: #fff;
+    padding: 2%;
+}
+
+.hero-section{
+    background-image: url(./Images/Rectangle\ 2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 12% 3% 8%;
+    color: #fff;
+}
+
+.hero-section .hero-text h1{
+    padding: 1% 0;
+    font-family: Public Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.hero-section .hero-text h3{
+    padding: 1% 0;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.hero-section .hero-text p{
+    width: 37%;
+    color: #FFF;
+    font-family: Public Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Filter section */
+
+.filters-search, .clear-all {
+   
+}
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 3%;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+}
+
+.left-filter-btn button{
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.clear-all{
+    margin-left: 100px;
+}
+/*----------- fiter results -----------*/
+
+.filter-results{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.filter-all, .filter-class, .filter-instructor{
+    margin-right: 20px;
+}
+
+.left-filter-result button{
+    background: #CCA8C8;
+    border: none;
+    margin-left: 3%;
+    margin-bottom: 5%;
+    font-size: 12px;
+    padding: 10px;
+    align-items: center;
+    gap: 100px;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+/* .left-filter-result button img{
+    width: 15%;
+} */
+
+/*--------------- right filter ---------*/
+.right-filter-btn{
+    display: flex;
+    gap: 30px;
+    display: flex;
+
+}
+
+.right-filter-btn button{
+    background: none;
+    border-color: purple;
+    padding: 2%;
+    border-radius: 5px;
+    font-size: 12px;
+    display: flex;
+    width: 90px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+} 
+
+
+
+/*------------ all filter ----------*/
+.right-filter-result{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  
+}
+
+.filter-class {
+    width: 140px;
+}
+
+.right-filter-result button{
+    width: 100px;
+    padding: 3%;
+    transition: 0.5s ease;
+}
+
+.right-filter-result button:hover{
+    background: #CCA8C8;
+    border: none;
+}
+
+.filt{
+    display: flex;
+    flex-direction: column;
+}
+
+/* CLASS SECTION */
+
+.class-header{
+    margin-bottom: 3%;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.class-section .class-overview{
+    display: flex;
+    background: #EEF0F4;
+    margin-bottom: 2%;
+    
+}
+
+.class-heading{
+    color: #1A202C;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.class-para{
+    color:#565656;
+    font-family: Public Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.instructor-name {
+    color: #1A202C;
+    font-family: Public Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+}
+
+.class-section .class-img, .class-text, .class-amount{
+    padding: 2%;
+}
+
+.class-section .class-overview .class-img img{
+    height: 100%;
+    width: 100%;
+}
+.class-section .class-overview .class-text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 13%;
+    /* padding-right: %; */
+    margin-right: 20%;
+}
+
+.class-section .class-overview .class-btn{
+    padding: 3%;
+    width: 40%;
+    border-radius: 6px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 4px solid #7F2674;
+    background: #FFF;
+    color: #7F2674;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; 
+    transition: 0.2s ease-in-out;
+}
+.class-section .class-overview .class-btn:hover{
+    background: #7F2674;
+    color:white;
+    border-color: #fff;
+}
+
+.class-section .class-overview .class-amount{
+    width: 20%;
+    padding: 2%;
+    line-height: 200%;
+    margin-top: 10%;    
+}
+
+/*------------ our team/instructor section --------------*/
+/* .team-section{
+    display: flex;
+    flex-direction: column;
+    gap: 50px
+} */
+
+.team-header{
+    display: flex;
+    justify-content:flex-start;
+    gap: 2%;
+}
+
+.team-writeup{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-btn{
+    padding: 1%;
+    background: purple;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+/*---------- list of instructors ----------*/
+
+.instructor-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 4%;
+}
+.instructor-img img{
+    border-radius: 5px;
+}
+
+.instructor-text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 4%;
+}
+.instructor-para{
+    width: 90%;
+}
