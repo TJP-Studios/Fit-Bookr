@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FITBOOKR - BOOKING</title>
+  <link rel="shortcut icon" href="./images/fitbookr_logo_360.png" type="image/x-icon">
+  <link rel="stylesheet" href="booking.css">
+  <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/css/intlTelInput.css" />
+  <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>Fit-Bookr</nav>
+  </header>
+  <main>
+    <section>
+      <div class="image-container">
+        <img src="./images/Rectangle 1.jpg" alt="FitBookr">
+        <div class="image-text">
+          Booking Summary
+        </div>
+      </div>
+    </section>
+    <section class="section_a">
+      <div class="container1">
+        <div class="contact">
+          <div>
+            <img src="./images/Vector.png" class="contact_himg" alt="Pilates">
+          </div>
+          <div class="contact_htext">
+            <p>Pilates Class </p>
+          </div>
+          <div class="contact_htext2">
+            <p>Monday, 5:30pm 6:30pm, with Coach Fred</p>
+          </div>
+        </div>
+        <form class="form1" method="post">
+          <div class="input_container">
+            <div class="input_name">
+              <label class="input_label" for="first_name">First name:</label><br>
+              <input class="input_tbox" type="text" id="first_name" name="first_name" placeholder="Enter First Name"
+                required>
+            </div>
+            <div class="input_name">
+              <label class="input_label" for="last_name">Last name:</label><br>
+              <input class="input_tbox" type="text" id="last_name" name="last_name" placeholder="Enter First Name"
+                required>
+            </div>
+          </div>
+          <div class=".input_mobilenumber">
+            <label class="input_label1" for="mobile_number">Mobile number:</label>
+            <!-- <input class="input_areacode" id="phone" type="" name="area-code" > -->
+            <input class="input_nbox" type="text" name="mobile_number" id="phone" placeholder="Enter Mobile Number"
+              maxlength="10" inputmode="numeric" required>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="receive_alerts" name="receive_alerts">
+            <label for="receive_alerts">Receive text alerts about this booking.</label><br><br>
+          </div>
+        </form>
+      </div>
+
+      <div class="container2">
+        <div>
+          <img class="yoga_img" src="./images/Rectangle 68.png" alt="Fit-Bookr">
+        </div>
+        <div class="yoga_container">
+          <div class="yoga_class">
+            <h2>
+              Yoga Class
+            </h2>
+            <div>
+              <p>
+                <img class="yoga_img2" src="./images/Vector (1).png" alt="">
+              </p>
+            </div>
+          </div>
+          <div>
+            <p class="yoga_class_p1">Non Refundable</p>
+            <p class="yoga_class_p">Reservation Date Monday, July, 2023</p>
+            <p class="yoga_class_p">Duration: 5:30pm - 6:30pm</p>
+            <p class="yoga_class_p">1 Individual</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section_a">
+      <div class="container3">
+        <div class="payment_option">
+          <div>
+            <img src="./images/Group (1).png" class="contact_himg" alt="Payment Option">
+          </div>
+          <div class="contact_htext">
+            <p>
+              Payment Option
+            </p>
+          </div>
+        </div>
+        <div class="payment_info">
+          <div class="tabs__sidebar">
+            <button class="tabs__button" data-for-tab="1"> Debit/Credit Card</button>
+            <button class="tabs__button" data-for-tab="2"> Paypal</button>
+            <button class="tabs__button" data-for-tab="3"> Bank Transfer</button>
+          </div>
+          <form class="tabs__content" data-tab="1">
+            <div>
+              <img src="./images/Frame 156.png" class="payment_option_img" alt="">
+            </div>
+            <div class="payment_oform">
+
+              <div class="payment_input1">
+                <label for="card-name" class="payment_label">Name on Card</label>
+                <input type="text" class="payment_inputf" id="card-name" name="card-name" minlength="6" required>
+                <span class="input-validation"></span>
+              </div>
+
+              <div class="payment_input1">
+                <label for="card-number" class="payment_label">Debit/Credit Card Number</label>
+                <input type="text" class="payment_inputf" id="cc" name="card-number" pattern="[0-9]{16}" maxlength="16"
+                  required>
+                <span class="input-validation"></span>
+              </div>
+
+            </div>
+            <div class="payment_expiration">
+              <label for="expiration-month" class="payment_label">Expiration Date</label>
+              <select id="expiration-month" class="payment_inputf2" name="expiration-month" required>
+                <option value="" disabled selected>Month</option>
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+
+              </select>
+              <select id="expiration-year" class="payment_inputf2" name="expiration-year" required>
+                <option value="" disabled selected>Year</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+                <option value="2031">2031</option>
+                <option value="2032">2032</option>
+                <option value="2033">2033</option>
+                <option value="2034">2034</option>
+                <option value="2035">2035</option>
+                <option value="2036">2036</option>
+                <option value="2037">2037</option>
+                <option value="2038">2038</option>
+                <option value="2039">2039</option>
+                <option value="2040">2040</option>
+                <option value="2041">2041</option>
+                <option value="2042">2042</option>
+                <option value="2043">2043</option>
+                <option value="2044">2044</option>
+                <option value="2045">2045</option>
+                <option value="2046">2046</option>
+                <option value="2047">2047</option>
+                <option value="2048">2048</option>
+                <option value="2049">2049</option>
+                <option value="2050">2050</option>
+              </select>
+              <span class="input-validation"></span>
+
+            </div>
+
+            <div class="payment_sb">
+              <div class="payment_sbcode">
+                <div>
+                  <label for="security-code">Security Code</label>
+                </div>
+                <div class="payment_sb_input">
+                  <input type="text" id="security-code" class="payment_inputf3" name="security-code"
+                    pattern="[0-9]{3,4}" minlength="3" maxlength="4" required>
+                  <span class="input-validation"></span>
+                </div>
+              </div>
+              <div class="payment_sbcode">
+                <div>
+                  <label for="billing-zip">Billing Zip Code</label>
+                </div>
+                <div class="payment_sb_input">
+                  <input type="text" id="billing-zip" class="payment_inputf4" name="billing-zip"
+                    pattern="[0-9a-zA-Z,-]{5}" maxlength="7" required>
+                  <span class="input-validation"></span>
+                </div>
+              </div>
+            </div>
+
+          </form>
+          <div class="tabs__content" data-tab="2">
+            <div class="payment-section" id="paypal_section">
+              <div>
+                <img src="./images/logo_paypal_bank.png" class="btn_img" loading="eager" alt="Paypal">
+              </div>
+              <p class="btn1">Please click the button below to proceed to PayPal:</p>
+              <a class="btn" href="https://www.paypal.com/login">Proceed to PayPal</a>
+              <div>
+                <img src="./images/paypaly.png" class="btn_img" loading="eager" alt="Paypal">
+              </div>
+            </div>
+          </div>
+          <div class="tabs__content" data-tab="3">
+            <div class="payment-section" id="bank_transfer_section">
+              <div>
+                <img src="./images/regular-bank-transfer.png" class="btn_img" loading="eager" alt="Paypal">
+              </div>
+              <div class="bank_btn">
+                <div>
+                  <div>
+                    <label for="routing_number" class="bank_label">Routing Number:</label>
+                  </div>
+                  <div class="bank_ra_input">
+                    <input type="text" id="routing_number" class="bank_input" name="routing_number" placeholder="Enter Routing Number" pattern="[0-9a-zA-Z,-]{9}" maxlength="9" required>
+                    <span class="input-validation"></span>
+                  </div>
+                  <div>
+                    <label for="account_number" class="bank_label">Account Number:</label>
+                  </div>
+                  <div class="bank_ra_input">
+                    <input type="text" id="account_number" class="bank_input name=" placeholder="Enter Account Number"  pattern="[0-9]{10}" maxlength="10" required>
+                    <span class="input-validation"></span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      <div class="container4">
+        <div class="price_details">
+          <p class="price_dh">Price Details</p>
+        </div>
+        <div class="price_dt">
+          <p>Yoga Class X 1</p>
+          <p>$ 120.32</p>
+        </div>
+        <div class="price_dt">
+          <p>Tax and Service fees</p>
+          <p> $8.32</p>
+        </div>
+        <hr>
+        <div class="price_dt">
+          <h3>Total</h3>
+          <h2>$130</h2>
+        </div>
+        <div class="price_tcoupon">
+          <a href="">Use a coupon, Credit or Promotional Code</a>
+        </div>
+        <div class="price_dc">
+          <div class="price_coupon">
+            <label for="Coupon_Code">
+              <h5>Coupon Code</h5>
+            </label>
+            <input class="price_cinput" type="text" id="last_name" name="last_name" placeholder="Coupon Code">
+          </div>
+          <div>
+            <button type="submit" class="price_cbutton">Apply Coupon</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section_b">
+      <div class="container5">
+        <div class="booking_terms">
+          <p class="booking_text1">Important information about your booking</p>
+        </div>
+        <div class="container5_layer">
+          <div>
+            <ol class="list">
+              <li> This rate is non refundable. If you change or cancel your booking you will not get a refund or credit
+                to use for a session.</li>
+              <li>Session extensions will require a new booking</li>
+              <li>Studio attendant will confirm booking on your arrival</li>
+              <li> No refunds will be issued for late arrival or early departure.</li>
+            </ol>
+          </div>
+          <div class="booking_terms2">
+            <p class="booking_text2">By clicking the button below, I acknowledge that I have reviewed the <a
+                href="#">Privacy Statement</a>
+              and
+              have reviewed and accept the <a href="#">Rules and Restrictions</a> and <a href="#">Terms of Use</a>.
+            </p>
+            <div>
+              <button type="submit" class="booking_tbutton">Complete Booking</button>
+            </div>
+          </div>
+          <div class="booking_terms3">
+            <div> <img src="./images/Group.png" class="booking_terms_img" alt="Fit-bookr"></div>
+            <div>
+              <p class="booking_text3">We use secure transmission and encrypted storage to protect your personal
+                information</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      separateDialCode: true,
+      preferredCountries: ["ng", "au", "gb", "us"]
+    });
+  </script>
+  <script>
+    function setupTabs() {
+      document.querySelectorAll(".tabs__button").forEach(button => {
+        button.addEventListener("click", () => {
+          const sideBar = button.parentElement; // Corrected variable name from 'sidBar' to 'sideBar'
+          const tabsContainer = sideBar.parentElement;
+          const tabNumber = button.dataset.forTab;
+          const tabToActivate = tabsContainer.querySelector(`.tabs__content[data-tab="${tabNumber}"]`); // Corrected spelling 'quarySelector' to 'querySelector', and used backticks for string interpolation
+
+          sideBar.querySelectorAll(".tabs__button").forEach(btn => {
+            btn.classList.remove("tabs__button--active");
+          });
+          tabsContainer.querySelectorAll(".tabs__content").forEach(tab => {
+            tab.classList.remove("tabs__content--active"); // Corrected variable name 'tabs' to 'tab'
+          });
+          button.classList.add("tabs__button--active");
+          tabToActivate.classList.add("tabs__content--active"); // Corrected variable name 'tabToActive' to 'tabToActivate'
+        });
+      });
+    }
+    document.addEventListener("DOMContentLoaded", () => {
+      setupTabs();
+      document.querySelectorAll(".tabs").forEach(tabsContainer => {
+        tabsContainer.querySelector(".tabs__sidebar .tabs__button").click();
+      });
+    });
+  </script>
+</body>
+
+</html>
