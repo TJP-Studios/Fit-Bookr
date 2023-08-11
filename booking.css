@@ -25,19 +25,22 @@ main {
   /* border: 2px solid red; */
 }
 
-:root{
+:root {
   -nav-link-active: #fff;
   -nav-link-inactive: rgba(231, 233, 237, 1);
 }
-body{
+
+body {
   background-color: rgba(231, 233, 237, 1);
 }
+
 /*NAVBAR AND HERO-SSECTION*/
 
-.herosection{
+.herosection {
   background-image: linear-gradient(225deg, #7F2675 0%, rgba(60, 23, 172, 0.57) 99.92%);
 }
-nav{
+
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,10 +55,12 @@ nav{
   backdrop-filter: blur(50px);
   background-image: linear-gradient(0deg #7F2675 0%, rgba(60, 23, 172, 0.57) 99.92%);
 }
-.nav-logo{
+
+.nav-logo {
   display: none;
 }
-.nav-links{
+
+.nav-links {
   width: 50%;
   font-size: 1rem;
   line-height: 1.5;
@@ -63,26 +68,32 @@ nav{
   position: relative;
   transition: all 1s cubic-bezier(0.47, 1.64, 0.41, 0.99);
 }
-.nav-links ul{
+
+.nav-links ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style: none;
 }
-.nav-links ul a,.row a{
+
+.nav-links ul a,
+.row a {
   text-decoration: none;
   color: rgba(231, 233, 237, 1);
   transition: all .5s ease;
 }
-.row a{
+
+.row a {
   color: #FFF;
 }
-.nav-links ul a:hover{
+
+.nav-links ul a:hover {
   color: #fff;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
-.booking{
+
+.booking {
   padding: .62rem;
   background-color: rgba(255, 255, 255, 1);
   border: 1px solid rgba(255, 255, 255, 1);
@@ -91,6 +102,7 @@ nav{
   margin-right: 2rem;
   font-weight: 500;
 }
+
 /* navbar */
 
 .image-container {
@@ -100,12 +112,12 @@ nav{
 
 .image-container img {
   max-width: 100%;
-  height: auto;
+  /* height: auto; */
 }
 
 .image-text {
   position: absolute;
-  top: 35%;
+  top: 50%;
   left: 30%;
   color: whitesmoke;
   font-size: 50px;
@@ -116,11 +128,82 @@ nav{
   border-radius: 5px;
 }
 
-.container {
-  display: flex;
-  border: 1px solid #ccc;
+.container_a {
+  /* background-color: #f0f0f0; */
   padding: 20px;
 }
+h3{
+
+}
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.schedule {
+  background-color: #ffe6e6;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.schedule_instructor {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.datepicker, .timepicker {
+  display: flex;
+  flex-direction: column;
+}
+
+.datetimepicker {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20%;
+}
+
+.custom-button {
+  background-color: #4217a5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+  background-color: #ffa787;
+}
+
+/* Style the input fields */
+.datepicker input[type="date"], .timepicker input[type="time"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Change the date and time picker icons */
+.datepicker input[type="date"]::-webkit-calendar-picker-indicator,
+.timepicker input[type="time"]::-webkit-calendar-picker-indicator {
+  background-image: url('path_to_your_custom_icon.svg');
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+
 
 .section_a {
   margin: 5% 0;
@@ -432,14 +515,14 @@ input[type="text"]:invalid {
 
 .payment_inputf2:valid+.payment_inputf2:valid~.input-validation::before {
   content: "✓";
-  color:  #2ecc71;
+  color: #2ecc71;
   margin-left: 5px;
 }
 
 .input-validation::before {
   display: inline-block;
   width: 18px;
-  color:  #2ecc71;
+  color: #2ecc71;
   margin-left: 1%;
   padding: 0.1em;
   border-radius: 100%;
@@ -531,6 +614,7 @@ payment-section {
   display: flex;
   align-items: middle;
 }
+
 .container4 {
   display: block;
   background-color: white;
@@ -621,7 +705,7 @@ a {
   border-radius: 6px 6px 0px 0px;
   padding: 1em;
   gap: 3%;
-  background: #7F2674;
+  background: #f3f70f;
   color: black;
 }
 
@@ -682,8 +766,9 @@ footer {
   font-weight: 600;
   padding-bottom: 1%;
 }
+
 .sign-up_button {
-  padding:10px 20px;
+  padding: 10px 20px;
   background-color: rgba(127, 38, 116, 1);
   border: 1px solid rgba(127, 38, 116, 1);
   border-radius: 4px;
@@ -691,6 +776,7 @@ footer {
   font-weight: 500;
   margin-bottom: 1%;
 }
+
 footer input {
   width: 300px;
   height: 35px;
@@ -701,15 +787,18 @@ footer input {
   border: 0.1px solid rgba(127, 38, 116, 1);
   margin-right: 50px;
 }
+
 .first_div_paragraph {
   margin-top: 5%;
 }
+
 footer h5 {
   padding-top: 1%;
   font-size: 25px;
   font-style: italic;
   text-align: center;
 }
+
 footer a {
   color: black;
   text-decoration: none;
@@ -718,13 +807,16 @@ footer a {
   font-style: normal;
   font-weight: 500;
 }
+
 textarea::placeholder {
   padding-top: 15%;
 }
+
 .promos_input::placeholder {
   color: rgba(18, 18, 18, 0.8);
   padding-left: 3%;
 }
+
 .promos_flex {
   display: flex;
   margin-top: 1%;
@@ -732,9 +824,11 @@ textarea::placeholder {
   align-items: center;
   text-align: center;
 }
+
 .promos_flex button {
   margin-top: 1%;
 }
+
 .footer_lower {
   justify-content: space-around;
   display: flex;
@@ -743,19 +837,24 @@ textarea::placeholder {
   font-style: normal;
   font-weight: 500;
   margin-top: 4%;
-} 
+}
+
 .first_div {
   width: 20%;
 }
+
 .first_div_image {
   width: 150px;
 }
+
 .social_media_icons {
   margin-top: 10%;
 }
+
 .first_div_links {
   margin-top: 20%;
 }
+
 .footer_last {
   display: flex;
   justify-content: space-between;
@@ -765,15 +864,47 @@ textarea::placeholder {
   font-weight: 500;
   margin-top: 4%;
 }
+
 .last_paragraphs {
   display: flex;
   margin-left: 40%;
   width: 50%;
 }
+
 .disclaimer {
   margin-left: 5%;
   width: 50%;
 }
+
 .footer_last p {
   margin-left: 5%;
+}
+Add media query for screens with max-width 780px */
+@media (max-width: 780px) {
+  /* Adjust header font size */
+  header {
+    font-size: 24px;
+  }
+
+  /* Adjust font size for navigation links */
+  .nav-links ul {
+    font-size: 0.8rem;
+  }
+
+  /* Adjust other styles as needed */
+}
+
+/* Add media query for screens with max-width 430px */
+@media (max-width: 430px) {
+  /* Adjust header font size further */
+  header {
+    font-size: 20px;
+  }
+
+  /* Adjust font size for navigation links */
+  .nav-links ul {
+    font-size: 0.7rem;
+  }
+
+  /* Adjust other styles as needed */
 }
