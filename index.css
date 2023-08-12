@@ -611,6 +611,41 @@ textarea::placeholder {
         z-index: 10000;
         transition: all 1s ease;
     }
+    body {
+        background-color: #FFF;
+    }
+    .nav {
+        background-color: #FFF;
+    }
+   .hero {
+    display: block;
+    background-color: #FFF;
+   }
+   .welcome-text {
+    width: 100%;
+   }
+   .booking {
+    background-color: rgba(127, 38, 116, 1);
+    border: 1px solid rgba(127, 38, 116, 1);
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 1);
+    padding: 15px 35px;
+   }
+   .welcome-text p {
+    color: var(--black-100, #1A202C);
+    width: 85%;
+   }
+   .welcome-text h1 {
+    color: var(--black-100, #1A202C);
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 121.2%; /* 38.784px */
+    text-transform: uppercase;
+   }
+    .activities, .process {
+        display: none;
+    }
     .nav-logo{
         border: 1px solid rgba(129, 77, 162, 0.01);
         box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.50);
