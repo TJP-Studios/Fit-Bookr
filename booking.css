@@ -152,7 +152,7 @@ h3{
 }
 
 .schedule_instructor {
-  width: 100%;
+  width: 50%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -165,8 +165,9 @@ h3{
 
 .datetimepicker {
   display: flex;
-  justify-content: space-between;
-  padding: 0 20%;
+  
+  /* justify-content: space-between; */
+  /* padding: 0 20%; */
 }
 
 .custom-button {
@@ -187,6 +188,7 @@ h3{
 /* Style the input fields */
 .datepicker input[type="date"], .timepicker input[type="time"] {
   padding: 8px;
+  margin-right: 10rem;
   border: 1px solid #ccc;
   border-radius: 5px;
   outline: none;
@@ -879,6 +881,7 @@ textarea::placeholder {
 .footer_last p {
   margin-left: 5%;
 }
+/* Mobile respnsive */
 Add media query for screens with max-width 780px */
 @media (max-width: 780px) {
   /* Adjust header font size */
@@ -901,10 +904,10 @@ Add media query for screens with max-width 780px */
     font-size: 20px;
   }
 
-  /* Adjust font size for navigation links */
+
   .nav-links ul {
     font-size: 0.7rem;
   }
 
-  /* Adjust other styles as needed */
+  
 }
