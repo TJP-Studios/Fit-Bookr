@@ -323,7 +323,6 @@ nav{
     display: flex;
     flex-direction: column;
     gap: 13%;
-    /* padding-right: %; */
     margin-right: 20%;
 }
 
