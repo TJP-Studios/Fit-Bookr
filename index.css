@@ -659,17 +659,6 @@ textarea::placeholder {
    .btn-a {
     display: none;
    }
-   /* .a-btn {
-    display: block;
-    background-color: rgba(255, 255, 255, 1);
-    border: 1px solid rgba(127, 38, 116, 1);
-    border-radius: 4px;
-    padding: 15px 35px;
-   }
-   .btn_ai {
-    color: rgba(127, 38, 116, 1);
-    display: block;
-   } */
     .activities, .process, .locate-us, .instructors_bio, .about-us_bio, .testimonials_area {
         display: none;
     }
