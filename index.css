@@ -91,7 +91,9 @@ nav{
 }
 .img {
     margin-top: 5%;
-    
+}
+.img_II {
+    display: none;
 }
 .welcome-text p{
     color: var(--white, #FFF);
@@ -112,6 +114,9 @@ nav{
     padding-bottom: 3rem;
     line-height: 121.2%;
     width: 90%;
+}
+.a-btn {
+    display: none;
 }
 
 
@@ -578,6 +583,9 @@ textarea::placeholder {
 .footer_last p {
     margin-left: 5%;
 }
+.mobile_view_footer {
+    display: none;
+}
 
 /* MOBILE RESPONSIVENESS HAMBURGER */
 .line{
@@ -604,7 +612,7 @@ textarea::placeholder {
   
 }
 
-@media  screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .hamburger{
         display: block;
         position: relative;
@@ -643,8 +651,49 @@ textarea::placeholder {
     line-height: 121.2%; /* 38.784px */
     text-transform: uppercase;
    }
-    .activities, .process {
+   .btn-a {
+    display: none;
+   }
+   /* .a-btn {
+    display: block;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(127, 38, 116, 1);
+    border-radius: 4px;
+    padding: 15px 35px;
+   }
+   .btn_ai {
+    color: rgba(127, 38, 116, 1);
+    display: block;
+   } */
+    .activities, .process, .locate-us, .instructors_bio, .about-us_bio, .testimonials_area {
         display: none;
+    }
+    .promos_flex, .promos {
+        display: none;
+    }
+    .featured_images {
+        display: block;
+    }
+    .mobile_view_footer {
+        display: block;
+        font-family: Public Sans;
+    }
+    .mobile_first_div {
+        margin-left: 30%;
+    }
+    .mobile_second_div  {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 3%;
+    }
+    .social_media_icons {
+        margin-top: 0;
+    }
+    .fitbookr_mobile {
+        width: 200px;
+    }
+    .mobile_first_paragraph {
+        width: 60%;
     }
     .nav-logo{
         border: 1px solid rgba(129, 77, 162, 0.01);
@@ -657,6 +706,22 @@ textarea::placeholder {
     }
     .booking{
         margin: 0 auto;
+    }
+    .img {
+        display: none;
+    }
+    .img_II {
+        display: block;
+    }
+    .featured_classes {
+        width: 100%;
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+    .featured_top p {
+        width: 100%;
+        padding-left: 0;
+        padding-bottom: 0;
     }
     .nav-links{
         position: fixed;
