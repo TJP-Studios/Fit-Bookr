@@ -518,6 +518,15 @@ textarea::placeholder {
     body{
         padding: 0 2%;
     }
+
+    section{
+        
+        background: #EEF0F4;
+    }
+
+    .class-overview{
+        margin-bottom: 100%;
+    }
     .hero-section{
         width: 388px;
         height: 344px;
@@ -570,7 +579,7 @@ textarea::placeholder {
         width: 428px;
         padding: 2%;
         line-height: 200%;
-        margin-top: 10%; 
+        margin-top: -1%; 
       
     }
 
@@ -579,12 +588,16 @@ textarea::placeholder {
     }
     
     .class-section .class-overview .class-btn{
-        width: 95px;
-        height: 43px;
-        border: 2px solid #7F2674;
-        display: block;
+        display: none;
     }
 
+  
+
+    .class-text .instructor-name, .class-heading {
+        display: none;
+    }
+
+    /* ------------team section  ---------------*/
     .team-section h3{
         width: 100%;
         font-size: 18px;
@@ -616,6 +629,22 @@ textarea::placeholder {
         gap: 10px;
         flex-shrink: 0;
         margin-left: 45%;
+    }
+    .class-btn-2{
+        /* display: inline-flex;
+        height: 54px;
+        padding: 10px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        margin-left: 45%; */
+        width: 95px;
+        height: 43px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        border: 2px solid #7F2674;
+        background: #FFF;
     }
 
         .instructor-list{
