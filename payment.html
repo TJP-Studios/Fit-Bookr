@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="payment.css">
+</head>
+
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Hamburger Menu</title>
+</head>
+<body>
+  <section class="herosection">
+    <header>
+      <nav>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="logo">
+          <!-- Your SVG logo here -->
+        </div>
+        <div class="nav-links">
+          <!-- Your navigation links here -->
+        </div>
+      </nav>
+    </header>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
+
+  <section class="container_a">
+    <div class="container">
+      <div>
+        <h2>Booking Schedule</h2>
+      </div>
+      <br>
+      <br>
+      <div class="schedule">
+        <label for="">
+          <h3>Choose Instructor</h3>
+        </label>
+        <select id="instructor" class="schedule_instructor" name="instructor" required>
+          <option value="" disabled selected>Select an Instructor</option>
+          <option value="instructor1">Instructor Name 1</option>
+          <option value="instructor2">Instructor Name 2</option>
+          <option value="instructor3">Instructor Name 3</option>
+          <option value="instructor4">Instructor Name 4</option>
+          <option value="instructor5">Instructor Name 5</option>
+        </select>
+        <div class="datetimepicker">
+          <div class="datepicker">
+            <div>
+              <label for="date">Select a Date:</label>
+            </div>
+            <div>
+              <input type="date" id="date" name="date" placeholder="Pick a date">
+            </div>
+          </div>
+          <div class="timepicker">
+            <div>
+              <label for="time">Select a Time:</label>
+            </div>
+            <div>
+              <input type="time" id="time" name="time" placeholder="Pick a time">
+            </div>
+          </div>
+        </div>
+        <div>
+          <button class="custom-button" onclick="showSchedule()">Show Schedule</button>
+          <div id="output"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+</body>
+
+</html>

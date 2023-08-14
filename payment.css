@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.herosection {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+.logo {
+  flex: 1;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+
+  .nav-links a:hover {
+    background-color: #555;
+  }
+}
+;
+
+.container_a {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.schedule {
+  background-color: #ffe6e6;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.schedule_instructor {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.datepicker, .timepicker {
+  display: flex;
+  flex-direction: column;
+}
+
+.datetimepicker {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20%;
+}
+
+.custom-button {
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+  background-color: #ff4500;
+}
+
+/* Style the input fields */
+.datepicker input[type="date"], .timepicker input[type="time"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Change the date and time picker icons */
+.datepicker input[type="date"]::-webkit-calendar-picker-indicator,
+.timepicker input[type="time"]::-webkit-calendar-picker-indicator {
+  background-image: url('path_to_your_custom_icon.svg');
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  opacity: 0.7;
+  cursor: pointer;
+}
