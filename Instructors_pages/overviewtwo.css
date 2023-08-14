@@ -1,0 +1,329 @@
+/* The first section styling starts here */
+.gymLabel img{
+    width: 100%;
+    position: relative;
+}
+
+.gymLabel h3{
+    color: white;
+    font-size: 200%;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+}
+
+.SecondSectionContainerDiv{
+    display: flex;
+}
+/* The first section styling ends here */
+
+/*The second section styling starts here */
+
+.SecondSectionContainerDiv{
+    width: 1152px;
+    height: 647px;
+    padding: 5%;
+    margin: auto;
+}
+
+/*This is for the first Div part */
+.instructorPic{
+    width: 40%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: relative;
+}
+
+
+
+/* The Instructors review part */
+.TheInstructorReview{
+    display: flex;
+    width: 38%;
+    justify-content: space-between;
+}
+
+.TheInstructorReview img{
+    width: 150%;
+}
+
+
+
+
+/*This is for the second Div part */
+.OverviewAndCredentialsDiv{ 
+    width: 60%;
+}
+
+.instructorPic img{
+    width: 75%;
+    
+}
+
+/* The styling Instructor's social media div starts here*/
+.instuctorsmedia{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 68%;
+    left: -4%;
+}
+
+.instuctorsmedia img{
+    width: 100%;
+}
+/* The styling Instructor's social media div ends here*/
+
+
+/* The styling for the Overview, Credential and Review div starts here */
+.myAchor {
+    display: flex;
+    justify-content: space-between;
+    font-size: 170%;
+    font-weight: bold;
+    
+}
+
+.myAchor a{
+    text-decoration: none;
+}
+
+.myAchor a:hover{
+    color:black;
+    border-bottom: 2px solid purple;   
+}
+
+/*The styling for The Fred Agbam, Trainer Div starts here */
+
+
+.fredAgbam h3{
+    font-size: 150%;
+    font-weight: bold;
+    color: black;
+}
+
+.fredAgbam p{
+    font-size: 100%;
+    color: purple;
+    padding-top: 0px;
+}
+
+/* The styling for The Bio div starts here */
+.Bio{
+    width: 80%;
+}
+.Bio h3{
+    font-size: 150%;
+    font-weight: bold;
+    color: rgb(65, 12, 140);
+}
+
+.Bio p{
+    font-size: 110%;
+    color: purple;
+    line-height: 25px;
+}
+/* The styling for The Bio div ends here */
+
+/*The skill styling starts here */
+#SetSkill{
+    font-size: 150%;
+    font-weight: bold;
+    color: rgb(65, 12, 140);
+}
+
+
+.theAerobicSkillContainer{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.AerobicDiv{
+    height: 10px;
+    width: 250px;
+    background-color: #D9D9D9;
+    border-radius: 2%;
+}
+
+.Aerobic{
+    height:10px ;
+    width: 95%;
+    background-color: #B1A2DE;
+    border-radius: 2%;
+}
+
+.theYogaSkillContainer{
+    display: flex;
+    gap: 155px;
+    align-items: center;
+    justify-content: center;
+}
+
+.YogaDiv{
+    height: 10px;
+    width: 250px;
+    background-color: #D9D9D9;
+    border-radius: 2%;
+}
+
+.Yoga{
+    height:10px ;
+    width: 100%;
+    background-color: #B1A2DE;
+}
+
+.theHiitSkillContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 95px;
+}
+
+.HiitDiv{
+    height: 10px;
+    width: 250px;
+    background-color: #D9D9D9;
+    border-radius: 10%;
+}
+
+.Hiit{
+    height:10px;
+    width: 98%;
+    border-radius: 10%;
+    background-color: #B1A2DE;
+} 
+
+.skillSetContainerDiv{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+/*The skill styling ends here */
+
+/* The styling The Fred Agbam, Trainer Div ends here */
+/*The second section styling ends here */
+
+
+/* The styling for the Qualifications and experience in credentials.html starts here */
+
+.Bio ul{
+    line-height: 22px;
+    font-size: 18px;
+}
+
+/* The styling for the Qualifications and experience in credentials.html ends here */
+
+
+/* The styling for the other skill set in credential.html starts here */
+
+.theMoltivationCoachontainer{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.ClientAssesmentContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.safetyAwarenessContainer{
+    display: flex;
+    gap: 90px;
+    align-items: center;
+    justify-content: center;
+}
+/* The styling for the other skill set in credential.html ends here */
+
+/* The styling for the Review.html starts here */
+
+/* The styling for the Review starts here */
+.addReviewDiv{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.addReviewDiv a{
+    text-decoration: none;
+    font-size: 16px;
+}
+/* The styling for the Review starts here */
+
+/* The styling for the MissCynthia's Review starts here */
+.cynthiambonaPicConataonerDiv{
+    display: flex;
+    
+    align-items: center;
+    /*justify-content: center;*/
+}
+
+.cynthiaDetails{
+    line-height: 1%;
+}
+
+.cynthiapic img{
+    width: 50%;
+}
+
+.cynthiaDetails{
+    padding-top: -5%;
+}
+
+.cynthiaDetails p{
+    font-size: 80%;
+}
+.cynthiaDetails img{
+    width: 50%;
+}
+
+
+.cynthiambonaPicConataonerDiv .cynthiaDetails p{
+    color: black;
+    /*font-size: 120%;*/
+}
+
+
+.FirstReview{
+    width: 80%;
+    padding-top: 5%;
+}
+#firstReviewParagraph p{
+    width: 97%;
+    font-size: 120%;
+    color: grey;
+    line-height: 25px;
+}
+
+/* The styling for the MissCynthia's Review ends here */
+
+/* The styling for the Jonathan's Review starts here */
+.SecondReview{
+    width: 80%;
+    padding-top: 5%;
+}
+
+#secondReviewParagraph p{
+    width: 97%;
+    font-size: 120%;
+    color:grey;
+    line-height: 25px;
+}
+
+
+/* The styling for the Jonathan's Review ends here */
+
+/* The styling for the Review ends here */
+
+
+
+
+/* The styling for the Review.html ends here */
