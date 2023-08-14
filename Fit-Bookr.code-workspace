@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"name": "Fit-Bookr",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "fit-bookr_booking page",
+		"liveServer.settings.port": 5501
+	}
+}

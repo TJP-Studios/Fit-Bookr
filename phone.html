@@ -1,0 +1,475 @@
+<html lang="en">
+
+<head>
+    <title>HTML Select Country Phone Code List with Flags</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="phone.css">
+
+</head>
+
+<body>
+
+    <input name="phone" type="text" id="phone" required />
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+  const phoneNumber = "+123456789"; // Replace this with the desired phone number
+  const phoneElement = document.getElementById("phone");
+  const flagElement = document.getElementById("flag");
+  const areaCodeElement = document.getElementById("area-code");
+
+  // Parse and format the phone number
+  const phoneNumberInstance = new libphonenumber.parsePhoneNumber(phoneNumber);
+  const countryCode = phoneNumberInstance.country;
+  const formattedPhoneNumber = phoneNumberInstance.formatNational();
+
+  // Set the flag image
+  flagElement.src = `https://www.countryflags.io/${countryCode}/flat/32.png`;
+
+  // Set the area code
+  areaCodeElement.textContent = formattedPhoneNumber;
+});
+    </script>
+    <div id="phone" class="phone-container">
+        <img id="flag" src="" alt="Country Flag">
+        <span id="area-code"></span>
+
+    </div>
+    <h1>Payment Platform</h1>
+    <form action="submit_payment.php" method="post">
+        <fieldset>
+            <legend>Debit/Credit Card</legend>
+            <label for="card_number">Card Number:</label><br>
+            <input type="text" id="card_number" name="card_number" required><br><br>
+
+            <label for="expiry_date">Expiry Date:</label><br>
+            <input type="text" id="expiry_date" name="expiry_date" placeholder="MM/YY" required><br><br>
+
+            <label for="cvv">CVV:</label><br>
+            <input type="text" id="cvv" name="cvv" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>PayPal</legend>
+            <label for="paypal_email">PayPal Email:</label><br>
+            <input type="email" id="paypal_email" name="paypal_email" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Bank Transfer</legend>
+            <label for="bank_name">Bank Name:</label><br>
+            <input type="text" id="bank_name" name="bank_name" required><br><br>
+
+            <label for="account_number">Account Number:</label><br>
+            <input type="text" id="account_number" name="account_number" required><br><br>
+        </fieldset>
+
+        <input type="submit" value="Make Payment">
+    </form>
+    <h1>Payment Platform</h1>
+    <form action="submit_payment.php" method="post">
+        <fieldset>
+            <legend>Payment Method</legend>
+            <label>
+                <input type="radio" name="payment_method" value="card" required> Debit/Credit Card
+            </label>
+            <label>
+                <input type="radio" name="payment_method" value="paypal"> PayPal
+            </label>
+            <label>
+                <input type="radio" name="payment_method" value="bank_transfer"> Bank Transfer
+            </label>
+        </fieldset>
+
+        <fieldset id="card_section">
+            <legend>Debit/Credit Card</legend>
+            <label for="card_number">Card Number:</label><br>
+            <input type="text" id="card_number" name="card_number"><br><br>
+
+            <label for="expiry_date">Expiry Date:</label><br>
+            <input type="text" id="expiry_date" name="expiry_date" placeholder="MM/YY"><br><br>
+
+            <label for="cvv">CVV:</label><br>
+            <input type="text" id="cvv" name="cvv"><br><br>
+        </fieldset>
+
+        <fieldset id="paypal_section">
+            <legend>PayPal</legend>
+            <label for="paypal_email">PayPal Email:</label><br>
+            <input type="email" id="paypal_email" name="paypal_email"><br><br>
+        </fieldset>
+
+        <fieldset id="bank_transfer_section">
+            <legend>Bank Transfer</legend>
+            <label for="bank_name">Bank Name:</label><br>
+            <input type="text" id="bank_name" name="bank_name"><br><br>
+
+            <label for="account_number">Account Number:</label><br>
+            <input type="text" id="account_number" name="account_number"><br><br>
+        </fieldset>
+
+        <input type="submit" value="Make Payment">
+    </form>
+
+    <script>
+        const paymentMethod = document.querySelector('input[name="payment_method"]');
+        const cardSection = document.getElementById('card_section');
+        const paypalSection = document.getElementById('paypal_section');
+        const bankTransferSection = document.getElementById('bank_transfer_section');
+
+        paymentMethod.addEventListener('change', function () {
+            cardSection.style.display = paymentMethod.value === 'card' ? 'block' : 'none';
+            paypalSection.style.display = paymentMethod.value === 'paypal' ? 'block' : 'none';
+            bankTransferSection.style.display = paymentMethod.value === 'bank_transfer' ? 'block' : 'none';
+        });
+    </script>
+
+    <h1>Payment Platform</h1>
+    <div class="payment-form">
+        <div id="card_section">
+            <h2>Debit/Credit Card</h2>
+            <label for="card_name">Name on Card:</label>
+            <input type="text" id="card_name" name="card_name" required><br>
+
+            <label for="card_number">Card Number:</label>
+            <input type="text" id="card_number" name="card_number" required><br>
+
+            <label for="expiry_month">Expiration Date:</label>
+            <select id="expiry_month" name="expiry_month" required>
+                <option value="">Month</option>
+                <!-- Add month options here -->
+            </select>
+            <select id="expiry_year" name="expiry_year" required>
+                <option value="">Year</option>
+                <!-- Add year options here -->
+            </select><br>
+
+            <label for="security_code">Security Code:</label>
+            <input type="text" id="security_code" name="security_code" required><br>
+
+            <label for="billing_zip">Billing Zip Code:</label>
+            <input type="text" id="billing_zip" name="billing_zip" required><br>
+        </div>
+
+        <div id="paypal_section">
+            <h2>PayPal</h2>
+            <p>Please click the button below to proceed to PayPal:</p>
+            <a href="https://www.paypal.com/login">Proceed to PayPal</a>
+        </div>
+
+        <div id="bank_transfer_section">
+            <h2>Bank Transfer</h2>
+            <label for="routing_number">Routing Number:</label>
+            <input type="text" id="routing_number" name="routing_number" required><br>
+
+            <label for="account_number">Account Number:</label>
+            <input type="text" id="account_number" name="account_number" required><br>
+        </div>
+    </div>
+
+    <div>
+
+        <head>
+            <title>Payment Platform Form</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                }
+
+                .payment-form {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .payment-section {
+                    flex: 1;
+                    margin: 20px;
+                    padding: 20px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                }
+
+                .payment-section h2 {
+                    margin-top: 0;
+                }
+
+                .payment-section label {
+                    display: block;
+                    margin-bottom: 5px;
+                }
+
+                .payment-section input[type="text"],
+                .payment-section input[type="number"],
+                .payment-section select {
+                    width: 100%;
+                    padding: 8px;
+                    margin-bottom: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 3px;
+                }
+
+                .payment-section a {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    background-color: #007bff;
+                    color: #fff;
+                    text-decoration: none;
+                    border-radius: 3px;
+                }
+            </style>
+        </head>
+
+        <body>
+            <h1>Payment Platform</h1>
+            <div class="payment-form">
+                <div class="payment-section" id="card_section">
+                    <h2>Debit/Credit Card</h2>
+                    <label for="card_name">Name on Card:</label>
+                    <input type="text" id="card_name" name="card_name" required>
+
+                    <label for="card_number">Card Number:</label>
+                    <input type="text" id="card_number" name="card_number" required>
+
+                    <label for="expiry_month">Expiration Date:</label>
+                    <select id="expiry_month" name="expiry_month" required>
+                        <option value="">Month</option>
+                        <!-- Add month options here -->
+                    </select>
+                    <select id="expiry_year" name="expiry_year" required>
+                        <option value="">Year</option>
+                        <!-- Add year options here -->
+                    </select>
+
+                    <label for="security_code">Security Code:</label>
+                    <input type="text" id="security_code" name="security_code" required>
+
+                    <label for="billing_zip">Billing Zip Code:</label>
+                    <input type="text" id="billing_zip" name="billing_zip" required>
+                </div>
+
+                <div class="payment-section" id="paypal_section">
+                    <h2>PayPal</h2>
+                    <p>Please click the button below to proceed to PayPal:</p>
+                    <a href="https://www.paypal.com/login">Proceed to PayPal</a>
+                </div>
+
+                <div class="payment-section" id="bank_transfer_section">
+                    <h2>Bank Transfer</h2>
+                    <label for="routing_number">Routing Number:</label>
+                    <input type="text" id="routing_number" name="routing_number" required>
+
+                    <label for="account_number">Account Number:</label>
+                    <input type="text" id="account_number" name="account_number" required>
+                </div>
+            </div>
+
+            <div>
+
+                <head>
+                    <title>Payment Platform Form</title>
+                    <style>
+                        body {
+                            font-family: Arial, sans-serif;
+                            background-color: #f3f3f3;
+                            margin: 0;
+                            padding: 0;
+                        }
+
+                        h1 {
+                            text-align: center;
+                            padding: 20px 0;
+                        }
+
+                        .payment-form {
+                            display: flex;
+                            justify-content: space-around;
+                            margin: 20px auto;
+                            max-width: 900px;
+                        }
+
+                        .payment-section {
+                            width: 30%;
+                            padding: 20px;
+                            background-color: #fff;
+                            border: 1px solid #ccc;
+                            border-radius: 5px;
+                        }
+
+                        .payment-section h2 {
+                            margin-top: 0;
+                        }
+
+                        .payment-section label {
+                            display: block;
+                            margin-bottom: 5px;
+                        }
+
+                        .payment-section input[type="text"],
+                        .payment-section input[type="number"],
+                        .payment-section select {
+                            width: 100%;
+                            padding: 8px;
+                            margin-bottom: 10px;
+                            border: 1px solid #ccc;
+                            border-radius: 3px;
+                        }
+
+                        .payment-section a {
+                            display: inline-block;
+                            padding: 10px 20px;
+                            background-color: #007bff;
+                            color: #fff;
+                            text-decoration: none;
+                            border-radius: 3px;
+                        }
+
+                        .payment-section .btn {
+                            display: block;
+                            width: 100%;
+                            padding: 10px;
+                            background-color: #007bff;
+                            color: #fff;
+                            text-align: center;
+                            text-decoration: none;
+                            border: none;
+                            border-radius: 3px;
+                            cursor: pointer;
+                        }
+
+                        .payment-section .btn:hover {
+                            background-color: #0056b3;
+                        }
+                    </style>
+                </head>
+
+                <body>
+                    <h1>Payment Platform</h1>
+                    <div class="payment-form">
+                        <div class="payment-section" id="card_section">
+                            <h2>Debit/Credit Card</h2>
+                            <label for="card_name">Name on Card:</label>
+                            <input type="text" id="card_name" name="card_name" required>
+
+                            <label for="card_number">Card Number:</label>
+                            <input type="text" id="card_number" name="card_number" required>
+
+                            <label for="expiry_month">Expiration Date:</label>
+                            <select id="expiry_month" name="expiry_month" required>
+                                <option value="" disabled selected>Select Month</option>
+                                <option value="01">January</option>
+                                <!-- Add other months here -->
+                                <option value="12">December</option>
+                            </select>
+                            <select id="expiry_year" name="expiry_year" required>
+                                <option value="" disabled selected>Select Year</option>
+                                <option value="2023">2023</option>
+                                <!-- Add other years here -->
+                                <option value="2050">2050</option>
+                            </select>
+
+                            <label for="security_code">Security Code:</label>
+                            <input type="text" id="security_code" name="security_code" required>
+
+                            <label for="billing_zip">Billing Zip Code:</label>
+                            <input type="text" id="billing_zip" name="billing_zip" required>
+                        </div>
+
+                        <div class="payment-section" id="paypal_section">
+                            <h2>PayPal</h2>
+                            <p>Please click the button below to proceed to PayPal:</p>
+                            <a class="btn" href="https://www.paypal.com/login">Proceed to PayPal</a>
+                        </div>
+
+                        <div class="payment-section" id="bank_transfer_section">
+                            <h2>Bank Transfer</h2>
+                            <label for="routing_number">Routing Number:</label>
+                            <input type="text" id="routing_number" name="routing_number" required>
+
+                            <label for="account_number">Account Number:</label>
+                            <input type="text" id="account_number" name="account_number" required>
+
+                            <button class="btn" type="submit">Submit</button>
+                        </div>
+                    </div>
+
+                </body>
+
+            </div>
+        </body>
+    </div>
+    <div>
+        <div class="col-75">
+            <div class="container">
+                <form action="/action_page.php">
+
+                    <div class="row">
+                        <div class="col-50">
+                            <h3>Billing Address</h3>
+                            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                            <input type="text" id="email" name="email" placeholder="john@example.com">
+                            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                            <label for="city"><i class="fa fa-institution"></i> City</label>
+                            <input type="text" id="city" name="city" placeholder="New York">
+
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="state">State</label>
+                                    <input type="text" id="state" name="state" placeholder="NY">
+                                </div>
+                                <div class="col-50">
+                                    <label for="zip">Zip</label>
+                                    <input type="text" id="zip" name="zip" placeholder="10001">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-50">
+                            <h3>Payment</h3>
+                            <label for="fname">Accepted Cards</label>
+                            <div class="icon-container">
+                                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                <i class="fa fa-cc-discover" style="color:orange;"></i>
+                            </div>
+                            <label for="cname">Name on Card</label>
+                            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                            <label for="ccnum">Credit card number</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                            <label for="expmonth">Exp Month</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="expyear">Exp Year</label>
+                                    <input type="text" id="expyear" name="expyear" placeholder="2018">
+                                </div>
+                                <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="352">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <label>
+                        <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                    </label>
+                    <input type="submit" value="Continue to checkout" class="btn">
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/libphonenumber-js/bundle/libphonenumber-js.min.js"></script>
+
+</body>
+
+</html>
