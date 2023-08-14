@@ -552,7 +552,7 @@ textarea::placeholder {
 @media only screen and (max-width: 428px) {
 
     body{
-        padding: 0 2%;
+        padding: 0 3%;
     }
 
     section{
@@ -587,13 +587,23 @@ textarea::placeholder {
         letter-spacing: 1px;
     }
 
+/* fitter media query */
+
+    .left-filter-result{
+        display: flex;
+        flex-direction: column;
+
+    }
+     
     /* class media query */
+
+
     .class-section .class-overview{
         display: flex;
         flex-direction: column;
         background: #EEF0F4;
         margin-bottom: 2%;
-        
+        margin-top: -8%;
     }
     
     .class-section .class-overview .class-img img{
@@ -623,7 +633,11 @@ textarea::placeholder {
         display: none;
     }
     
-    .class-section .class-overview .class-btn{
+    .class-section .class-overview .class-btn {
+        display: none;
+    }
+
+    .class-section .class-header{
         display: none;
     }
 
