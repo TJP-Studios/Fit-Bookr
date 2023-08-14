@@ -4,7 +4,6 @@
     box-sizing: border-box;
     max-width: 100%;
     font-style: normal;
-    font-family: Public Sans;
 }
 h1 {
     font-family: Public Sans;
@@ -119,29 +118,8 @@ nav{
 .a-btn {
     display: none;
 }
-.gym_girl_I {
-    margin-bottom: 75px;
-}
 
-.main_paragraph {
-    padding-top: 2%;
-    padding-bottom: 1%;
-    width: 80%;
-    padding-left: 20%;
-    text-align: center;
-}
-.smallie {
-    width: 70%;
-    text-align: center;
-    padding-left: 30%;
-    padding-top: 2%;
-}
-.sub {
-    padding-top: 1%;
-}
-h2, h3 {
-    text-align: center;
-}
+
 
 /* SECOND SECTION */
 
@@ -606,6 +584,9 @@ textarea::placeholder {
 .footer_last p {
     margin-left: 5%;
 }
+.mobile_view_footer, .community_div {
+    display: none;
+}
 
 /* MOBILE RESPONSIVENESS HAMBURGER */
 .line{
@@ -632,7 +613,7 @@ textarea::placeholder {
   
 }
 
-@media  screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .hamburger{
         display: block;
         position: relative;
@@ -641,6 +622,11 @@ textarea::placeholder {
     }
     body {
         background-color: #FFF;
+        font-family: Public Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        
     }
     .nav {
         background-color: #FFF;
@@ -671,8 +657,53 @@ textarea::placeholder {
     line-height: 121.2%; /* 38.784px */
     text-transform: uppercase;
    }
-    .activities, .process {
+   .btn-a {
+    display: none;
+   }
+    .activities, .process, .locate-us, .instructors_bio, .about-us_bio, .testimonials_area {
         display: none;
+    }
+    .promos_flex, .promos {
+        display: none;
+    }
+    .featured_images, .community_div {
+        display: block;
+    }
+    .mobile_view_footer {
+        display: block;
+        font-family: Public Sans;
+    }
+    .featured_classes {
+        margin-top: 50%;
+    }
+    .featured_top {
+        width: 100%;
+        padding-left: 0;
+        text-align: left;
+    }
+    .mobile_first_div {
+        margin-left: 30%;
+    }
+    .mobile_second_div  {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 3%;
+    }
+    .first_div_links {
+        margin-top: 20px;
+    }
+    .community_div {
+        margin-top: 25px;
+        margin-left: 18%;
+    }
+    .social_media_icons {
+        margin-top: 0;
+    }
+    .fitbookr_mobile {
+        width: 200px;
+    }
+    .mobile_first_paragraph {
+        width: 60%;
     }
     .nav-logo{
         border: 1px solid rgba(129, 77, 162, 0.01);
@@ -685,6 +716,23 @@ textarea::placeholder {
     }
     .booking{
         margin: 0 auto;
+    }
+    .img {
+        display: none;
+    }
+    .img_II {
+        display: block;
+    }
+    .featured_classes {
+        width: 100%;
+        text-align: center;
+    }
+    .featured_images p {
+        width: 70%;
+        margin-left: 15%;
+    }
+    .featured_top p {
+        width: 100%;
     }
     .nav-links{
         position: fixed;
